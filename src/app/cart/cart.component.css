@@ -1,0 +1,139 @@
+.displaynone{
+    display: none;
+}
+.cart__section{
+    padding:40px 0;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  tr{
+      max-height: 137px;
+  }
+  
+  td, th {
+    
+    text-align: left;
+
+  }
+  h3{
+      margin-bottom: 30px;
+  }
+.cart__section-list{
+
+        border-top: 20px solid;
+        border-bottom: 20px solid;
+        border-color: transparent;
+    
+}
+.cart__section-img{
+    width: 86px;
+    height: 86px;
+}
+.cart__section-wrap-name{
+    padding-left: 10px;
+}
+.cart__section-input-wrap{
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.cart__section-input{
+    width: 58px;
+    height: 60px;
+    border: 0px solid;
+    background-color: transparent;
+}
+.cart__section-input:focus{
+    color: #3fd0d4;
+    outline: none;
+}
+.cart__section-input-wrap-btn{
+    display: flex;
+    flex-direction: column;
+}
+.cart__section-input-wrap-btn button{
+    border: none;
+    background-color: #fff;
+    border-left:1px solid #ccc;
+}
+.cart__section-alter-btn{
+    border:1px solid #ccc;
+   
+}
+.cart__section-alter-btn:active i{
+    color:#3fd0d4;
+}
+.cart__section-close{
+    border: none;
+}
+.cart__section-close:active{
+    color: #3fd0d4;
+}
+tr td:last-child{
+    text-align: center;
+}
+.remove-all{
+    padding: 14px 42px;
+    background-color: #3fd0d4;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    transition: opacity linear 0.2s;
+
+    float:right;
+}
+.remove-all:hover{
+    opacity: 0.7;
+}
+.total-price{
+    float:right;
+}
+.total__infor-wrap{
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+}
+.total__infor-wrap ul{
+    list-style: none;
+    color: #212121;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.total__infor-wrap tr{
+    border-bottom: 1px solid #ccc;
+}
+.total__infor-wrap th{
+    
+    width: 260px;
+}
+.total__infor-wrap td{
+    text-align: left !important;
+}
+.total__infor-wrap span{
+    font-weight: 700;
+}
+.total__infor-des-adr{
+    text-decoration: none;
+    color: #212121;
+}
+.total__infor-des-adr:hover{
+    color: #3fd0d4;
+}
+.total__infor-des-wrap td{
+    padding:14px 0;
+}
+.total__infor-des-price{
+    float:right;
+    margin-top: 20px;
+}
+.total__infor-heading{
+    color: #3fd0d4;
+    margin-top: 100px;
+}
+.total__infor-name{
+    font-size: 20px;
+    color:#333;
+}

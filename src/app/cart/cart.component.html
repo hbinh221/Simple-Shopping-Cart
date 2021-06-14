@@ -1,0 +1,71 @@
+<section class="cart__section">
+    <div class="container">
+      
+          <div *ngIf="getCardDetails.length > 0;else tpl">
+
+            <table>
+            <tr>
+              <th></th>
+              <th>Product</th>
+              <th>Price</th> 
+              <th>Quantity</th>
+              <th>SubTotal</th>
+              
+            </tr>
+            <tr class="cart__section-list" *ngFor="let product of getCardDetails" >
+             <td>
+                    <button (click)="removeProduct(product.id)" class="cart__section-close">
+                        <i class="ti ti-close"></i>
+                    </button>
+             </td>
+              <td>
+                    <div class="cart__section-wrap">
+                        <img src="{{product.img}}" class="cart__section-img" alt="P2">
+                        <span class="cart__section-wrap-name">{{product.name}}</span>
+                    </div>
+              </td>
+              <td>${{product.price}}</td>
+              <td class="cart__section-input-wrap">
+                  <input type="text" value="{{product.quantity}}" class="cart__section-input">
+                  <div class="cart__section-input-wrap-btn">
+
+                      <button (click)="addPrd(product.id ,product.quantity)" class="cart__section-alter-btn"><i class="ti ti-angle-up" ></i></button>
+                      <button (click)="minusPrd(product.id ,product.quantity)"  class="cart__section-alter-btn"><i class="ti ti-angle-down"></i></button>
+                  </div>
+
+                </td>
+                
+                       <td>
+                         ${{product.price * product.quantity | number}}
+                       </td>
+            </tr>
+               
+            </table>
+            <button class="remove-all" (click)="removeAll()">Remove All Item</button>
+            <h3 class="total__infor-heading">INFORMATION</h3>
+            <table class="total__infor-wrap" *ngFor="let eachProduct of getCardDetails">
+              <h2 class="total__infor-name">{{eachProduct.name}}:</h2>
+              <tr >
+                <th>Shipping</th>
+                
+                  <ul>
+                  <li class="total__infor-des">Free Shipping</li>
+                  <li class="total__infor-des">Shipping to <span>VietNam</span></li>
+                  <li class="total__infor-des"><a href="" class="total__infor-des-adr">Change Address</a></li>
+                </ul>
+              </tr>
+              <tr class="total__infor-des-wrap">
+                <th>Total</th>
+                <td> <span>${{eachProduct.price *eachProduct.quantity}}</span></td>
+
+              </tr>
+            </table>
+            <h2 class="total__infor-des-price">TOTAL: {{total}}</h2>
+          </div>
+          <ng-template #tpl>
+            <div style="background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/shop-title-img-1.jpg) ; background-position: center -33.488px; height: 520px; background-color: rgb(248, 248, 248)"></div>
+              hello 
+          </ng-template>
+
+    </div>
+</section>
