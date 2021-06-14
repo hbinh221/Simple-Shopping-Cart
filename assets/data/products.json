@@ -1,0 +1,30 @@
+[
+    {
+      "id":1,
+      "img":"../../assets/img/p1.jpg",
+      "name":"Summer Hat",
+      "price":96,
+      "quantity":1
+    },
+    {
+      "id":2,
+      "img":"../../assets/img/p2.jpg",
+      "name":"Flip Flops",
+      "price":24,
+      "quantity":1
+    },
+    {
+      "id":3,
+      "img":"../../assets/img/p3.jpg",
+      "name":"Sunglasses",
+      "price":200,
+      "quantity":1
+    },
+    {
+      "id":4,
+      "img":"../../assets/img/p4.jpg",
+      "name":"Tent",
+      "price":500,
+      "quantity":1
+    }
+  ]
